@@ -9,10 +9,24 @@ const HelpOptions = (props) => {
       handler: props.actionProvider.handlehelpList,
       id: 1,
     },
-    { text: "Data Quality Issue", handler: () => {}, id: 2 },
-    { text: "Logistics", handler: () => {}, id: 3 },
-    { text: "Finance", handler: () => {}, id: 4 },
-    { text: "Daily Management", handler: () => {}, id: 5 },
+    {
+      text: "Data Quality Issue",
+      handler: props.actionProvider.handleDQhelpList,
+      id: 2,
+    },
+    {
+      text: "Logistics",
+      handler: props.actionProvider.handleLGhelpList,
+      id: 3,
+    },
+    {
+      text: "Finance",
+      handler: props.actionProvider.handleFhelpList,
+      id: 4,
+    },
+    { text: "Daily Management",
+     handler: props.actionProvider.handleDMhelpList,
+      id: 5, },
   ];
 
   const optionsMarkup = options.map((option) => (
